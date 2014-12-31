@@ -9,5 +9,6 @@ Refer https://github.com/mokhan/mars.rover for the problem statement
 
 Running the Solution
 --------------------
-`ruby main.rb` to run the solution. 
+`ruby main.rb` to run the solution.   
+
 `ruby test.rb` to run the unit tests. 
