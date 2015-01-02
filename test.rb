@@ -99,7 +99,7 @@ class TestRover < Test::Unit::TestCase
 		test.move
 		expected = { x: 0, y: 0, direction: :s }
 		assert_equal expected, test.rover, "rover moving south on boundary test"
-				
+    
 		test.set_position 0, 0, 'W'
 		test.move
 		expected = { x: 0, y: 0, direction: :w }
