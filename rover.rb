@@ -14,15 +14,15 @@ class Rover
 	end
 
   # Resets the rover's position and direction
-	def set_position x, y, direction
-		@rover[:x] = x
-		@rover[:y] = y
-		@rover[:direction] = direction.downcase.to_sym
-	end
+  def set_position x, y, direction
+    @rover[:x] = x
+    @rover[:y] = y
+    @rover[:direction] = direction.downcase.to_sym
+  end
 
   # Moves the rover forward
-	def move
-		case @rover[:direction]
+  def move
+    case @rover[:direction]
       when :n
         if @rover[:y] < @top
           @rover[:y] += 1
@@ -42,7 +42,7 @@ class Rover
         if @rover[:x] < @right
           @rover[:x] += 1
         end
-    end
+      end
   end
 
   # Turns the rover. Argument can be 'L' or 'R'
@@ -57,7 +57,7 @@ class Rover
     if index > 3 
       index = (index+1) % 4 - 1
     end
-  @rover[:direction] =  directions[index]
+    @rover[:direction] =  directions[index]
 
   end
 
