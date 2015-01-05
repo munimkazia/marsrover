@@ -1,17 +1,17 @@
 class Rover
-	attr_reader :rover
-	attr_reader :right
-	attr_reader :top
-	
-	def initialize x, y
-		@right = x
-		@top = y
-		@rover = {
-			x: 0,
-			y: 0,
-			direction: :n
-		}
-	end
+  attr_reader :rover
+  attr_reader :right
+  attr_reader :top
+  
+  def initialize x, y
+    @right = x
+    @top = y
+    @rover = {
+      x: 0,
+      y: 0,
+      direction: :n
+    }
+  end
 
   # Resets the rover's position and direction
   def set_position x, y, direction
@@ -42,7 +42,7 @@ class Rover
         if @rover[:x] < @right
           @rover[:x] += 1
         end
-      end
+    end
   end
 
   # Turns the rover. Argument can be 'L' or 'R'
